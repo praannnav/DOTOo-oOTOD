@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- Quote Section -->
+  <div class="container mt-4">
+
+    <div class="card">
+      <div class="card-header">
+        DOTOo
+      </div>
+
+      <div class="card-body">
+
+        <figure>
+          <blockquote class="blockquote">
+            <p>“Plans are nothing; planning is everything.”</p>
+          </blockquote>
+
+          <figcaption class="blockquote-footer">
+            <cite>Dwight D. Eisenhower</cite>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Features -->
+  <div class="container mt-4">
+
+    <div class="row">
+
+      <!-- Productivity -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Boost Productivity</h5>
+
+            <p class="card-text">
+              Scheduling tasks reduces procrastination and improves focus on important work.
+            </p>
+
+            <p class="card-text">
+              <small class="text-body-secondary">DOTOo</small>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Habit Organization -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Organize Your Habits</h5>
+
+            <p class="card-text">
+              Structure your daily routines and build long-term consistency.
+            </p>
+
+            <p class="card-text">
+              <small class="text-body-secondary">DOTOo</small>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Calendar -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Visual Calendar</h5>
+
+            <p class="card-text">
+              View tasks and habits on a clear visual calendar to plan ahead.
+            </p>
+
+            <p class="card-text">
+              <small class="text-body-secondary">DOTOo</small>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Progress -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Track Your Progress</h5>
+
+            <p class="card-text">
+              Watch your streaks grow and stay motivated through visible progress.
+            </p>
+
+            <p class="card-text">
+              <small class="text-body-secondary">DOTOo</small>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Inspiration -->
+      <div class="col-md-6 mb-3">
+        <div class="card text-center h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Track Your Habbit</h5>
+
+            <p class="card-text">
+              You can make streak for any habbit and track it daily 
+            </p>
+
+            <a href="{{ url_for('signup') }}" class="btn btn-primary">
+              Make a streak now
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Start Button -->
+      <div class="col-md-6 mb-3">
+        <div class="card text-center h-100">
+
+          <div class="card-body">
+            <h5 class="card-title">Simple & Fast</h5>
+
+            <p class="card-text">
+              Add tasks quickly and focus on what matters.
+            </p>
+
+            <a href="{{ url_for('signup') }}" class="btn btn-success">
+              Start Now
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+{% endblock %}

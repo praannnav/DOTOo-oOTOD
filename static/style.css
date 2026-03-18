@@ -1,0 +1,9 @@
+.card{
+    margin: 20px;
+}
+
+.carousel img{
+    height:400px;
+    object-fit:cover;
+}
+

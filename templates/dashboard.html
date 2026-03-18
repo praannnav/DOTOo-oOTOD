@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block tab %}
+<li class="nav-item">
+    <p class="nav-link text-danger fw-bold" id=logout >Logout </p>
+</li>
+{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <!-- Todo Card -->
+    <div class="card shadow-lg p-4">
+
+        <h3 class="text-center mb-4">My Todo List</h3>
+
+        <!-- Todo Form -->
+        <form id="todo" class="d-flex justify-content-center mb-4">
+            <input type="text" class="form-control w-50 me-2" name="task" placeholder="Enter your task... "
+                id="task_name">
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </form>
+
+
+        <!-- Todo Table -->
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered align-middle text-center">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Task</th>
+                        <th>Time Added</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for task in todo_list %}
+                    <tr data-id={{task.taskId}}>
+                        <td>{{ loop.index }}</td>
+                        <td >{{ task.task }}</td>
+                        <td >{{ task.time }}</td>
+                        <td class="remove">{{"🗑️"}}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
